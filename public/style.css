@@ -1,29 +1,79 @@
-/* HEADER HOMEPAGE */
-.header{
-    background-image: url('/media/504543.jpg');
+body {
+    margin: 0;
+}
+
+.movie-page {
+    min-height: 100vh;
+    background: radial-gradient(circle at top, #1b2735 0%, #090a0f 100%);
+    padding-bottom: 60px;
+}
+
+.page-title {
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 0;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+    letter-spacing: 1px;
+}
+
+.accent {
+    color: #ed1d24;
+}
+
+.movie-card {
+    border: none;
+    height: 100%;
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.movie-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 12px 30px rgba(237, 29, 36, 0.45);
+}
+
+.movie-card img {
+    height: 380px;
+    object-fit: contain;
+    background-color: #f8f9fa;
+    padding: 8px;
+}
+
+.detail-poster {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+}
+
+.detail-text {
+    color: #ffffff;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+.header {
+    background-image: url('/media/header-bg.jpg');
     height: 95vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.text-color{
+.text-color {
     text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
 }
 
-/* pagina contatti */
-
-.box{
+.box {
     border: dotted white 2px;
     min-height: 250px;
     max-width: 250px;
     transition: all 0.5s;
     cursor: pointer;
 }
-.box:hover{
+
+.box:hover {
     border: 3px solid white;
     transform: translateY(-10px);
 }
-.icon{
+
+.icon {
     font-size: 50px;
 }
